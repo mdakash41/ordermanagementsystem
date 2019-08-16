@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="665.0" prefWidth="1080.0" style="-fx-background-color: #1C2229;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="14.0" layoutY="14.0" prefHeight="75.0" prefWidth="1051.0" style="-fx-background-color: #34404D; -fx-background-radius: 12px; -fx-border-radius: 12px; -fx-border-color: black; -fx-border-width: 3px;">
+         <children>
+            <Label fx:id="welcomeLabel" layoutX="112.0" layoutY="14.0" prefHeight="46.0" prefWidth="512.0" text="Welcome " textFill="WHITE">
+               <font>
+                  <Font size="34.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1eeb1e" height="20.0" layoutX="788.0" layoutY="28.0" stroke="BLACK" strokeType="INSIDE" width="18.0" />
+            <Label fx:id="usernameLabel" layoutX="826.0" layoutY="22.0" prefHeight="30.0" prefWidth="110.0" text="UserName" textFill="#f2f2f2">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="947.0" layoutY="22.0" mnemonicParsing="false" onAction="#logout" prefHeight="30.0" prefWidth="86.0" text="Logout">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="14.0" layoutY="110.0" prefHeight="544.0" prefWidth="1051.0" style="-fx-background-color: #34404D; -fx-background-radius: 12px; -fx-border-radius: 12px; -fx-border-color: black; -fx-border-width: 3px;">
+         <children>
+            <Button fx:id="customerlistButton" layoutX="105.0" layoutY="63.0" mnemonicParsing="false" onAction="#customerList" prefHeight="150.0" prefWidth="362.0" style="-fx-background-color: #32B5D1; -fx-border-radius: 13px; -fx-background-radius: 13px;" text="Customer List">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Button>
+            <Button fx:id="productlistButton" layoutX="538.0" layoutY="63.0" mnemonicParsing="false" onAction="#productDetail" prefHeight="150.0" prefWidth="362.0" style="-fx-background-color: #32B5D1; -fx-border-radius: 13px; -fx-background-radius: 13px;" text="Product Detail">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Button>
+            <Button fx:id="orderlistButton" layoutX="105.0" layoutY="284.0" mnemonicParsing="false" onAction="#orderList" prefHeight="150.0" prefWidth="362.0" style="-fx-background-color: #32B5D1; -fx-background-radius: 13px; -fx-border-radius: 13px;" text="Order List">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Button>
+            <Button fx:id="pendingorderbutton" layoutX="538.0" layoutY="284.0" mnemonicParsing="false" onAction="#PendingOrder" prefHeight="150.0" prefWidth="362.0" style="-fx-background-color: #32B5D1; -fx-border-radius: 13px; -fx-background-radius: 13px;" text="Pending Order">
+               <font>
+                  <Font size="46.0" />
+               </font>
+            </Button>
+            <Line endX="751.0" layoutX="185.0" layoutY="32.0" startX="-110.20709228515625" startY="-1.5" style="-fx-stroke-width: 3px;" />
+            <Line endX="764.0" endY="1.0" layoutX="173.0" layoutY="472.0" startX="-98.0" startY="1.0" style="-fx-stroke-width: 3px;" />
+            <Line endX="-110.5" endY="440.5" layoutX="1047.0" layoutY="32.0" startX="-110.5" startY="0.5" style="-fx-stroke-width: 3px;" />
+         </children>
+      </Pane>
+      <Line endX="78.79289245605469" endY="441.0" layoutX="10.0" layoutY="141.0" startX="78.79289245605469" style="-fx-stroke-width: 3px;" />
+   </children>
+</AnchorPane>
